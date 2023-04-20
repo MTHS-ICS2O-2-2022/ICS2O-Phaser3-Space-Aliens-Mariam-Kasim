@@ -3,10 +3,18 @@
 // Copyright (c) 2023 Mariam Kasim All rights reserved
 //
 // Created by: Mariam Kasim
-// Created on: Feb 2023
+// Created on: Apr 2023
 //This is the Phaser3 configuration file
 
-//* Game scene */
+//scene imports statement
+import splashScene from "./splashScene.js"
+
+//create new scenes
+const splashScene = new splashScene()
+
+/**
+ * Start Phaser game
+ */
 const config = {
   type: Phaser.AUTO,
   width: 1920,
@@ -28,3 +36,10 @@ const config = {
 
 const game = new Phaser.Game(config)
 console.log(game)
+
+// load scenes
+// Note: Remember any "key" is global and CAN NOT be reused!
+game.scene.add("splashScene", splashScene)
+
+// the start scene
+game.scene.start("splashScene")
