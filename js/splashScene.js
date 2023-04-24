@@ -9,7 +9,7 @@
 /**
  * This class is the splash scene
  */
-class splashScene extends Phaser.Scene {
+class SplashScene extends Phaser.Scene {
   /**
    * This method is the constructor
    */
@@ -51,8 +51,8 @@ class splashScene extends Phaser.Scene {
    * @param {number} delta - The delta time in ms since the last frame
    */
   update(time, delta) {
-    //pass
+    this.scene.switch("titleScene")
   }
 }
 
-export default splashScene
+export default SplashScene
