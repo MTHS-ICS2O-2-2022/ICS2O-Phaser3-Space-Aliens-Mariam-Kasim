@@ -8,11 +8,11 @@
 
 //scene imports statement
 import splashScene from "./splashScene.js"
-import TitleScene from "./titleScene.js"
+import titleScene from "./titleScene.js"
 
 //create new scenes
 const splashScene = new splashScene()
-const titleScene = new TitleScene()
+const titleScene = new titleScene()
 
 /**
  * Start Phaser game
