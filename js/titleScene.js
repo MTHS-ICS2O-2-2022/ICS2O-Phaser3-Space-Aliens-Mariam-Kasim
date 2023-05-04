@@ -20,7 +20,7 @@ class TitleScene extends Phaser.Scene {
   this.titleSceneText = null
   this.titleSceneTextStyle = { 
   font: "200px Times",
-  fill: "#ff0000",
+  fill: "#fde4b9",
   align: "center", 
 }
   }
@@ -41,7 +41,7 @@ class TitleScene extends Phaser.Scene {
    * */
   preload() {
     console.log("Title Scene")
-    this.load.image("titleSceneBackground", "./assets/aliens_screen_image.jpg")
+    this.load.image("titleSceneBackground", "assets/aliens_screen_image.jpg")
   }
 
   /**

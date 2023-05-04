@@ -9,14 +9,14 @@
 /**
  * This class is the splash scene
  */
-class SplashScene extends Phaser.scene { 
+class SplashScene extends Phaser.Scene { 
   /**
    * This method is the constructor
    * */
   constructor() {
     super({ key: "splashScene" })
 
-    this.splashScreen = null
+    this.splashSceneBackgroundImage = null
   }
 
   /**
@@ -44,7 +44,7 @@ class SplashScene extends Phaser.scene {
    *@param {object} data - Any data passed via ScenePlugin.add () or ScenePlugin.start ()
    */
   create(data) {
-    this.splashScreen = this.add.sprite(
+    this.splashSceneBackgroundImage = this.add.sprite(
       0,
       0,
       "splashSceneBackground"
