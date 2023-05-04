@@ -40,7 +40,7 @@ class GameScene extends Phaser.Scene {
    * Use it to create your game objects
    * @param {object} data - Any data passed via ScenePlugin.add () or ScenePlugin.start ()
    * */
-  create (data) {
+  create(data) {
     //pass
   }
 
@@ -53,7 +53,6 @@ class GameScene extends Phaser.Scene {
   update (time, delta) {
     // pass
   }
-
 }
 
-export default GameScene.js
+export default GameScene
